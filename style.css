@@ -1,0 +1,132 @@
+*{
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(135deg,#4203a9,#90bafc);
+   
+}
+.wrapper div{
+    height: 60px;
+    width:40px;
+    position: absolute;
+    border: 2px solid white;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius:25px ;
+}
+.wrapper div:nth-child(1){
+    top:10%;
+    left:30%;
+    animation: square 5s linear infinite;
+}
+.wrapper div:nth-child(2){
+    top:20%;
+    left:50%;
+    animation: square 7s linear infinite;
+}
+.wrapper div:nth-child(3){
+    top:65%;
+    left:10%;
+    animation: square 11s linear infinite;
+}
+.wrapper div:nth-child(4){
+    top:50%;
+    left:40%;
+    animation: square 9s linear infinite;
+}
+.wrapper div:nth-child(5){
+    top:40%;
+    left:60%;
+    animation: square 7s linear infinite;
+}
+.wrapper div:nth-child(6){
+    top:80%;
+    left:30%;
+    animation: square 13s linear infinite;
+}
+.wrapper div:nth-child(7){
+    top:10%;
+    left:10%;
+    animation: square 12s linear infinite;
+}
+.wrapper div:nth-child(8){
+    top:20%;
+    left:85%;
+    animation: square 8s linear infinite;
+}
+.wrapper div:nth-child(9){
+    top:75%;
+    left:65%;
+    animation: square 9s linear infinite;
+}
+.wrapper div:nth-child(10){
+    top:80%;
+    left:85%;
+    animation: square 7s linear infinite;
+}
+.wrapper div:nth-child(11){
+    top:45%;
+    left:95%;
+    animation: square 8s linear infinite;
+}
+@keyframes square{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+    }
+    100%{
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+    }
+}
+
+.container .calculator{
+    margin-left: 100px;
+    margin-top: 100px;
+    position: fixed;
+}
+.container .calculator h1{
+    font-size: 3.3rem;
+    font-weight: 800;
+}
+.container .box{
+    margin-top: 50px;
+    height: 90px;
+    padding: 20px;
+    width:450px;
+    border: 2px solid transparent;
+    background-color:rgb(135, 165, 235);
+    border-radius: 10px;
+    justify-content:space-around;
+    display: flex;
+    align-items: center;
+}
+.container .box input{
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    height:40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.container .box button{
+    height: 40px;
+    width:100px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 800;
+    font-size: 1.3rem;
+    background-color: yellow;
+}
+.container .calculator #output{
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+.container .calculator #output span{
+    color:yellow;
+}
